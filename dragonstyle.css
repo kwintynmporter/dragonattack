@@ -16,3 +16,20 @@ h4 {
 p {
    background-color: darkgray
 }
+#video {
+    display: block;
+    width: 320px;
+    height: 240px;
+    background-color: #ccc;
+    background-image: url(https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjym67piIrfAhUp_IMKHSgxC3cQjRx6BAgBEAU&url=https%3A%2F%2Ffineartamerica.com%2Ffeatured%2Fdragon-roll-japanese-style-tattoo-dragon-w-dragon-roll-sushi-karbondream-art.html%3Fproduct%3Dgreeting-card&psig=AOvVaw1iLbYCSuvte7POnsaRkyNe&ust=1544146612646280);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  #video.active {
+    background-color: white;
+    border: 2px solid #eee;
+  }
+ 
+  
