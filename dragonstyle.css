@@ -5,7 +5,8 @@
     width: 50% 
 }
 h1 { 
-    color: white
+    color: darkgoldenrod
+    background-color: darkgray
 }
 
 h4 {
@@ -13,5 +14,5 @@ h4 {
 
 }
 p {
-   background-color: darkcyan
+   background-color: darkgray
 }
