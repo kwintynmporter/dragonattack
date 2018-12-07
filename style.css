@@ -12,6 +12,7 @@
 .dragoncenter {
     background-color: transparent; 
     text-align: center; 
+    margin-top: -38%; 
 }
 .button { 
     background-color: #cccccc;
@@ -53,3 +54,8 @@ button:hover {
     float: right;
     color: transparent; 
   }
+  .video { 
+      margin-top: -25%;
+      text-align: center; 
+  }
+  

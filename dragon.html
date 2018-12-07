@@ -31,7 +31,33 @@
         <p id="statusID"></p>
         <br><br><hr>
         <h3> Now attack the dragon. </h3>
-        <img src="sword.png" class="relative"> 
+        <style type="text/css"> 
+            *
+            { 
+                margin: 0px; 
+                padding: 0px;
+            }
+        
+            .dragzone, .dropzone
+            { 
+                height: 400px; 
+                width: 40%;
+                border: 0px; 
+                float: left; 
+                margin-top: 150px; 
+                margin-left: 10%;  
+            }
+        
+            </style> 
+        <body> 
+        
+                <div class="dropzone" ondragover="allowDrop(event)" ondrop=drop(event)"> 
+        
+                    </div>  
+            <div class="dragzone"> 
+        
+                <img src="sword.png" id="dragelement" height= "300px" ondragstart="dragStart(event)"> 
+            </div>        
         <script type="text/javascript">
             function clickAllower(el) {  
                 do { el = el.nextSibling } while (el && el.nodeType !== 1);
@@ -42,7 +68,7 @@
             <img src="dragonclicker.png" class="dragoncenter main" alt="" style="cursor: pointer" />
         </div>
         <div style="display: none">
-            <iframe width="440" height="248" src="https://www.youtube.com/embed/CbwYZCga50U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+            <iframe class="video" width="650" height="448" src="https://www.youtube.com/embed/CbwYZCga50U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
             </div> 
         <h3> Crowd not cheering? Make them!</h3>
         <script> 

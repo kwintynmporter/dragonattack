@@ -2,6 +2,20 @@ $('img').click(function(){
     video = '<iframe src="'+ $(this).attr('data-video') +'"></iframe>';
     $(this).replaceWith(video);
 }); 
+var id ; 
+function allowDrop(ev) 
+{
+    ev.preventDefault(); 
+}
+function dragstart(ev) 
+{
+    id=ev.targert.id; 
+}
+
+function drop(ev)
+{
+    ev.targer.append(document.getElementById(id));
+}
 
 var youtubeURLArray = [];
 var linkArray = [];
@@ -16,6 +30,7 @@ function initApplication() {
 function initVidRequest() {
     console.log("initVidRequest()");
     loadInFull();
+}
 
 function viewCurrentContact() {
     currentContact = linkArray[currentContactIndex];
@@ -86,4 +101,4 @@ function loadNextSong(URL) {
     }
     contactRequest.send();
 }
-}
+
