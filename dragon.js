@@ -13,10 +13,10 @@ function initApplication() {
     console.log('Mustang v3 Lite - Starting!'); 
     document.getElementById("nameID").value = "";   
 }
-function importContacts() {
-    console.log("importContacts()");
+function initVidRequest() {
+    console.log("initVidRequest()");
     loadInFull();
-}
+
 function viewCurrentContact() {
     currentContact = linkArray[currentContactIndex];
     console.log(currentContact);
@@ -40,7 +40,6 @@ function next() {
 }
 
 function loadInFull() {
-    // Load the Mustang index file.
     var indexRequest = new XMLHttpRequest();
     indexRequest.open('GET', 'https://yt-linkage.azurewebsites.net/youtube-index.json');
     indexRequest.onload = function() {
@@ -51,13 +50,12 @@ function loadInFull() {
             youtubeURLArray.push(contactIndex[i].youtubeURL );
         }
         console.log("youtubeURLArray: " + JSON.stringify(youtubeURLArray));
-        loadContacts();
+        getVideos();
     }
     indexRequest.send();
 }
 
-function loadContacts() {
-    // Clear the current linkArray.
+function getVideos() {
     linkArray.length = 0;
     nameOfSong = 0;
 
@@ -88,4 +86,4 @@ function loadNextSong(URL) {
     }
     contactRequest.send();
 }
-
+}
