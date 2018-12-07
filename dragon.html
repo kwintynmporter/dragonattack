@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Author:  Kwintyn Porter
+-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Dragon Attack</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script> 
+        <script src="dragon.js"></script>
+        <link rel = "stylesheet" href="style.css"
+        
+    </head>
+    <body onload="initApplication()">
+        <h1 align="center">Dragon Attack</h1> 
+            <button type="button" onclick="importContacts()">Load Links</button><br><br>
+            <br><br>
+
+            <table>
+            <tr>
+                <td>Name:</td>
+                <td> 
+                    <input id="nameID" type="text" value="" size="50">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <button type="button" onclick="previous()">Previous</button>
+        <button type="button" autofocus onclick="next()">Next</button><br><br>
+        <p id="statusID"></p>
+        <br><br><hr>
+        <h3> Now attack the dragon. </h3>
+        <img src="dragonclicker.png" data-video="http://www.youtube.com/embed/zP_D_YKnwi0?autoplay=1">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        URLs:<p id="indexID"></p>
+        Names:<p id="linksID"></p>
+    </body>
+</html>
